@@ -1,0 +1,9 @@
+soundfile
+scipy
+matplotlib
+scikit-learn
+librosa
+hydra-core
+tensorboardX
+transformers
+tqdm
