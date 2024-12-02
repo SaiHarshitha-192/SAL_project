@@ -16,6 +16,7 @@ conda activate sdhubert
 cd ./mincut
 python setup.py build_ext --inplace
 ```
+Download [the pretrained model](https://drive.google.com/file/d/1u2jTdAck8qD6ZEb5bqHfvUNsN-9DgGfg/view?usp=drive_link) and put under the `ckpts/`. The following code will provide segment boundaries and the pooled feature per segment.
 
 ### Extract segments
 
@@ -91,6 +92,9 @@ python evaluate_boundary.py --segment_path=SEGMENT_PATH
 ```
 
 ### Train clustering model
+
+To get unit category, you can apply pretrained clustering model as follows. Please download the assets ([km](https://drive.google.com/file/d/14zdEttya2X8PdjDMUt4lyHWOOY2OS3Zr/view?usp=drive_link) and [reducer](https://drive.google.com/file/d/19XisepDAfULOKFY147RDYT5UAk2ZnCr-/view?usp=drive_link)) and place under `km/`.
+
 
 ```
 python train_km.py --segment_path=SEGMENT_PATH --n_clusters=16384 --n_clusters_agglomerative=4096
