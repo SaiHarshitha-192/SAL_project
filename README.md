@@ -61,6 +61,15 @@ After the model training is finished, export model to more handy checkpoint file
 python export_model.py --ckpt_path=outputs/DATE/TIME/NAME
 ```
 
+## Conversion of obtained files into single file
+
+Run the `segmentation_mine.py` to merge all the different files containing segments, features and segment features (AUDIO_FILE_NAME_segments.txt, AUDIO_FILE_NAME_feature.npy , AUDIO_FILE_NAME_segmentfeature.npy') into one file for each of the audio files.
+
+## Dividing the files into directories 
+
+This is done based on speaker number -> chapter number -> audio file number for evaluation
+Run the `split_folders.py` to split them respectively
+
 ## Evaluation
 
 Please run through the following commands to extract segments and evaluate syllable boundary detection, purity, and SSABX task. Also, please check the arguments in the scripts to get full control of experiment.
