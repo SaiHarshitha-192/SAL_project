@@ -1,4 +1,4 @@
-# SAL PROJECT
+# SAL PROJECT: SD-HuBERT
 
 ## Paper title: SD-HuBERT: Sentence-Level Self-Distillation Induces Syllabic Organization In HuBERT
 
